@@ -19,12 +19,12 @@ header a:hover {
   text-shadow: 2px 2px #00000054;
 }
 
-#work, #school {
+#work + #school {
   color: white;
   border-bottom: white 2px dotted;
 }
 
-.accordion-item, .accordion-button {
+.accordion-item + .accordion-button {
   color: white;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -42,7 +42,7 @@ header a:hover {
   margin-top: 10%;
 }
 
-#who, #contact, .btn-light {
+#who + #contact + .btn-light {
   margin: 2em;
 }
 
