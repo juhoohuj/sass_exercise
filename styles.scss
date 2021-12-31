@@ -1,4 +1,7 @@
 $textColor: #ffffff;
+@mixin margin {
+  margin: 2em;
+}
 
 body {
   background-image: url(stars.jpg);
@@ -10,7 +13,6 @@ body {
     color: $textColor;
     text-shadow: 2px 2px #00000054;
   }
-  
 }
 
 header {
@@ -56,24 +58,27 @@ header {
 }
 
 #who,
-#contact,
+#contact {
+  @include margin();
+  p{
+    font-size: 1.1em;
+  }
+}
 .btn-light {
-  margin: 2em;
+  @include margin();
 }
 
 #welcome {
   position: inherit;
   margin-top: 14rem;
+  p {
+    font-size: 1.5em;
+    color: $textColor;
+  }
 }
 
 #work,
 #school {
-  color: white;
+  color: $textColor;
   border-bottom: white 2px dotted;
-}
-
-#who, #contact {
-  p{
-  font-size: 1.1em;
-}
 }
